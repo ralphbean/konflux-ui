@@ -18,7 +18,6 @@ import { AccessReviewResources } from '../../types';
 import { useAccessReviewForModels } from '../../utils/rbac';
 import { ButtonWithAccessTooltip } from '../ButtonWithAccessTooltip';
 import { SignupStatus } from '../SignUp/signup-utils';
-import SignupButton from '../SignUp/SignupButton';
 import { useSignupStatus } from '../SignUp/useSignupStatus';
 import { useWorkspaceInfo } from '../Workspace/useWorkspaceInfo';
 
@@ -110,7 +109,6 @@ const IntroBanner: React.FC = () => {
                 </p>
               </Alert>
             )}
-            {signupStatus === SignupStatus.NotSignedUp && <SignupButton />}
           </CardBody>
         </Card>
       </GridItem>
